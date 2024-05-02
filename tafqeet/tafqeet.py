@@ -94,11 +94,15 @@ class Tafqeet:
             first = int(Tafqeet._getNth(num, 0, 0))
             second = int(Tafqeet._getNth(num, 1, 1))
 
-            if first in Tafqeet._TENS and second in Tafqeet._TENS:
+            if first in Tafqeet._TENS:
+                value = Tafqeet._TENS[first]
+
+            if second in Tafqeet._ONES and second > 0:
                 if Tafqeet._TENS[first] == "عشر":
                     value = Tafqeet._ONES[second] + " " + Tafqeet._TENS[first]
                 else:
                     value = Tafqeet._ONES[second] + " و" + Tafqeet._TENS[first]
+
         return value
 
     @staticmethod
