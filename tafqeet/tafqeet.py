@@ -261,10 +261,10 @@ class Tafqeet:
         pounds_val = Tafqeet.tafqeet(int(num)) + " جنيها"
 
         pt_val = ""
-        if num-int(num) > 0:
-            ptr = int((num-int(num))*100)
-            print(ptr)
-            pt_val = Tafqeet.tafqeet(ptr)
+        pt = round(num - int(num), 4)
+        if pt > 0:
+            dec_points = len(str(pt).split('.')[1])
+            pt_val = Tafqeet.tafqeet(int(pt * pow(10, dec_points)))
 
         if len(pt_val) > 0:
             pt_val = " و" + pt_val + " قرشا"

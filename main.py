@@ -9,4 +9,4 @@ def main(num, currency):
 
 
 if __name__ == "__main__":
-    print(main(17, "EGP"))
+    print(main(17.54324, "EGP"))
