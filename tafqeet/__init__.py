@@ -1,1 +1,1 @@
-from .tafqeet import Tafqeet
+from .tafqeet import Tafqeet, Currency

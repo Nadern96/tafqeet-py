@@ -1,5 +1,5 @@
 import re
-
+from enum import Enum
 
 class Tafqeet:
     _ONES = {
@@ -258,10 +258,16 @@ class Tafqeet:
 
         pt_val = ""
         if num-int(num) > 0:
-            pt_val = Tafqeet.tafqeet((num-int(num))*1000)
+            ptr = int((num-int(num))*100)
+            print(ptr)
+            pt_val = Tafqeet.tafqeet(ptr)
 
         if len(pt_val) > 0:
             pt_val = " و" + pt_val + " قرشا"
 
         value = pounds_val + pt_val + " مصريا فقط لا غير"
         return value
+
+
+class Currency(Enum):
+    EGP = 'EGP'

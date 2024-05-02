@@ -1,9 +1,12 @@
-from tafqeet import Tafqeet
+from tafqeet import Tafqeet, Currency
 
 
-def main():
-    return Tafqeet.tafqeet_EGP(956342)
+def main(num, currency):
+    if currency == Currency.EGP.value:
+        return Tafqeet.tafqeet_EGP(num)
+
+    return Tafqeet.tafqeet(num)
 
 
 if __name__ == "__main__":
-    print(main())
+    print(main(17, "EGP"))
