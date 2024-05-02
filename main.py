@@ -2,7 +2,7 @@ from tafqeet import Tafqeet
 
 
 def main():
-    return Tafqeet.tafqeet_EGP(956342.432)
+    return Tafqeet.tafqeet_EGP(956342)
 
 
 if __name__ == "__main__":
