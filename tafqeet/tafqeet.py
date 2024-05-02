@@ -254,5 +254,11 @@ class Tafqeet:
 
     @staticmethod
     def tafqeet_EGP(num):
-        value = Tafqeet.tafqeet(num) + " جنيها مصريا فقط لا غير"
+        pounds_val = Tafqeet.tafqeet(int(num)) + " جنيها"
+        ptr_val = Tafqeet.tafqeet((num-int(num))*1000)
+
+        if len(ptr_val) > 0:
+            ptr_val = " و" + ptr_val + " قرشا"
+
+        value = pounds_val + ptr_val + " مصريا فقط لا غير"
         return value
