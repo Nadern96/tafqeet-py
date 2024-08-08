@@ -1,0 +1,28 @@
+[build-system]
+requires = []
+build-backend = "tafqeet"
+
+[project]
+name = "tafqeet"
+version = "1.0.0"
+dependencies = [
+]
+requires-python = ">=3.7"
+authors = [
+  {name = "Nader", email = "nadernabilmansour@gmail.com"}
+]
+maintainers = [
+  {name = "Nader", email = "nadernabilmansour@gmail.com"}
+]
+description = "python pkg for converting numbers to arabic words"
+readme = "README.md"
+
+keywords = []
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python"
+]
+
+[project.optional-dependencies]
+[project.urls]
+Repository = "https://github.com/Nadern96/tafqeet-py"
